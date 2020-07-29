@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(30, 31, 39);
+    color: rgba(255, 255, 255, .80);
+    font-family: 'Source code pro', monospace;
+    border: none;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 5vw;
+    color: rgba(255, 255, 255, .80);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-item:hover {
+    color: rgb(255, 197, 197);
+}
+
+.link {
+    margin: 0;
+    color: rgba(255, 255, 255, .80);
+    text-decoration: none;
+}
+
+.anim{
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(255, 255, 255, .80);
+    position: relative;
+    z-index: 3;
+    font-size: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+}
+
+.bio {
+    padding: 0 20vw;
+    font-size: 25px;
+    text-align: center;
+}
+
+.project {
+    text-align: center;
+}
+
+.project-name {
+    font-size: 35px;
+}
+
+.project-img {
+    width: 70vw;
+    margin: 0;
+}
+
+.project > p {
+    margin: 25px 20vw;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+    border: 3px solid rgba(255, 255, 255, .80);
+    color: rgba(255, 255, 255, .80);
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.contact-info {
+    font-size: 25px;
+    text-align: center;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.link-img {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    margin: 0 20px;
+}
+
+.about {
+    margin-top: 15vh;
+}
+
+.proj {
+    margin-top: 30vh;
+}
+
+.contact {
+    margin-top: 10vh;
+}
+
+/* Animations */
+
+.name {
+    animation: typewriter 2s steps(14) 1.5s 1 normal both,
+                blinkingCursor 600ms steps(14) 10 forwards;
+}
+
+.anim {
+    animation: slideTitle 1.5s linear 6s 1 both;
+}
+
+.hide {
+    animation: revealContent 1s linear 7.5s 1 both;
+}
+
+body {
+    animation: allowScroll 1ms linear 7.5s 1 both;
+}
+
+@keyframes typewriter {
+    from{width: 0;}
+    to{width: 14ch;}
+}
+
+@keyframes blinkingCursor {
+    from{border-right-color: rgba(255, 255, 255, .80);}
+    to{border-right-color: transparent;}
+}
+
+@keyframes slideTitle {
+    from{height: 90vh;}
+    to{height: 10vh;}
+}
+
+@keyframes revealContent {
+    from{visibility: hidden; opacity: 0;}
+    to{visibility: visible; opacity: 1;}
+}
+
+@keyframes allowScroll {
+    from{overflow: hidden;}
+    to{overflow: visible;}
+}

@@ -1,143 +1,93 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Adam MacGregor</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://use.fontawesome.com/781ba6bf36.js"></script>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam MacGregor</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="hide">
+        <nav>
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#projects">Projects</a>
+            <a class="nav-item" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="anim">
+        <h1 class="name">Adam MacGregor</h1>
+    </div>
+    <div class="hide">
+        <section class="about">
+            <h1 class="title" id="about">About</h1>
+            <p class="bio">
+                Hello, world! I recently graduated from the University of Houston in December 2019. I have a B/S in Computer Science with a minor in Mathematics. I am seeking
+                a full time web developer position. I currently know HTML5, CSS3, JavaScript(ES6), React, Node.js, Express, SQL, C++, and Swift. 
+            </p>
+        </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        <section class="proj">
+            <h1 class="title" id="projects">Projects</h1>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Adam<br />
-						MacGregor</h1>
-						<p>
-							Hello, World! I recently graduated from the University of Houston majoring in 
-							Computer Science with a minor in Mathematics. I am seeking a full-time web developer 
-							position. I currently know HTML, CSS, JavaScript, React, Node.js, Express, and SQL. 
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+            <div class="project">
+                <h1 class="project-name">Steam Achievement Website</h1>
+                <img class="project-img" src="./img/steam.png">
+                <p>
+                    A React frontend being served up by a Node.js backend. The user enters their profile ID as well as selecting the game from 
+                    a list of predefined games. The backend handles the API calls to Steam's servers.
+                </p>
+                <a href="http://steamachievements-env.eba-vk3kwmyb.us-east-2.elasticbeanstalk.com/" target="_blank" class="button">Live Demo</a>
+            </div>
+            <hr>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Adam MacGregor</a>
-					</header>
+            <div class="project">
+                <h1 class="project-name">Weather app</h1>
+                <img class="project-img" src="./img/weather1.png">
+                  <br>
+                <p>
+                    A weather app made with React, Node, and Express. The user enters a city and gets the current weather as well as an hourly 
+					and weekly forecast. The city is converted to latitude and longitude coordinates through OpenCage's geocoding api
+                    and then sent to the OpenWeatherMap api for weather data.
+                </p>
+                <a href="http://weatherapp-env.eba-3keu3mbq.us-east-2.elasticbeanstalk.com/" target="_blank" class="button">Live Demo</a>
+            </div>
+            <hr>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a>Projects</a></li>
-							<!-- <li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/adam-macgregor" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+            <div class="project">
+                <h1 class="project-name">Calculator</h1>
+                <img class="project-img" src="./img/calculator.png">
+                <p>A simple calculator made using JavaScript. I used this as a simple project when learning the basics of HTML, CSS, and JavaScript.</p>
+                <a href="https://adam-macgregor.github.io/js-calculator/" target="_blank" class="button">Live Demo</a>
+            </div>
+            <hr>
 
-				<!-- Main -->
-					<div id="main">
+            <div class="project">
+                <h1 class="project-name">To-do List</h1>
+                <img class="project-img" src="./img/todo.png">
+                <p>A simple to-do list app. I used this as a simple project while learning the basics of React.</p>
+                <a href="https://adam-macgregor.github.io/react-todolist/" target="_blank" class="button">Live Demo</a>
+            </div>
+            <hr>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Steam Achievements website</h2>
-									<p>
-										A React frontend being served up by a Node.js backend. The user enters their profile ID as well as selecting the game from 
-										a list of predefined games. The backend handles the API calls to Steam's servers.  
-									</p>
-								</header>
-								<img src="./images/steam.png" alt="Steam app" class="image main"/>
-								<ul class="actions special">
-									<li><a href="http://steamachievements-env.eba-vk3kwmyb.us-east-2.elasticbeanstalk.com/" target="_blank" class="button">Live Demo</a></li>
-								</ul>
-							</article>
+        </section>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Weather app</h2>
-									</header>
-									<img src="./images/weather1.png" alt="Calculator" class="image fit"/>
-									<p>A weather app made with React, Node, and Express. The user enters a city and gets the current weather as well as an hourly 
-										and weekly forecast. The city is converted to latitude and longitude coordinates through OpenCage's geocoding api
-										and then sent to the OpenWeatherMap api for weather data.</p>
-									<ul class="actions special">
-										<li><a href="http://weatherapp-env.eba-3keu3mbq.us-east-2.elasticbeanstalk.com/" target="_blank" class="button">Live Demo</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>Calculator</h2>
-									</header>
-									<img src="./images/calculator.png" alt="Calculator" class="image fit"/>
-									<p>A simple calculator made using JavaScript. I used this as a simple project when learning the basics of HTML, CSS, and JavaScript.</p>
-									<ul class="actions special">
-										<li><a href="https://adam-macgregor.github.io/js-calculator/" target="_blank" class="button">Live Demo</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>Todo List</h2>
-									</header>
-									<img class="image fit" src="./images/todo.png" alt="Todo list" />
-									<p>A simple todo list app. I used this as a simple project while learning the basics of React.</p>
-									<ul class="actions special">
-										<li><a href="https://adam-macgregor.github.io/react-todolist/" target="_blank" class="button">Live Demo</a></li>
-									</ul>
-								</article>
-							</section>
-					</div>
-					<br />
-
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p>(832) 421-3307</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>adam.c.macgregor@gmail.com</p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/adam-macgregor" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <section class="contact">
+            <h1 class="title" id="contact">Contact</h1>
+            <p class="contact-info">
+                (832)421-3307<br/><br/>
+                adam.c.macgregor@gmail.com<br/><br/>
+                <a class="link" href="./Adam MacGregor resume.pdf" target="_blank">Resume</a><br/><br/>
+                <a class="link" target="_blank" href="https://github.com/adam-macgregor"><img class="link-img" src="img/github.png" alt="Github"></a>
+                <a class="link" target="_blank" href="https://www.linkedin.com/in/adam-macgregor-b77a35155/"><img class="link-img" src="img/linkedin.png" alt="LinkedIn"></a>
+                
+            </p>
+        </section>
+    </div>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
 </html>
