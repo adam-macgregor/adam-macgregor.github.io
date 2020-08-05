@@ -1,18 +1,26 @@
 html, body {
-    height: 100%;
-    width: 100%;
     margin: 0;
-    background-color: rgb(30, 31, 39);
-    color: rgba(255, 255, 255, .80);
+    padding: 0;
+    background-color: white;
+    color: rgba(0, 0, 0, .80);
     font-family: 'Source code pro', monospace;
-    border: none;
+    box-sizing: border-box;
 }
 
+/*
+    background-color: rgb(30, 31, 39);
+    color: rgba(255, 255, 255, .80);
+*/
+
 header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.514);
     height: 10vh;
     width: 100%;
     margin: 0;
-    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    z-index: 15;
 }
 
 nav {
@@ -32,27 +40,28 @@ nav {
 }
 
 .nav-item:hover {
-    color: rgb(255, 197, 197);
+    color: rgb(64, 75, 163);
 }
 
 .link {
     margin: 0;
-    color: rgba(255, 255, 255, .80);
+    color: rgba(0, 0, 0, .80);
     text-decoration: none;
 }
 
 .anim{
-    height: 90vh;
-    margin: auto;
+    height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .name {
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid rgba(255, 255, 255, .80);
+    border-right: 2px solid rgba(0, 0, 0, .80);
     position: relative;
     z-index: 3;
     font-size: 50px;
@@ -69,8 +78,66 @@ nav {
     text-align: center;
 }
 
+/* Carousel */
+.carousel-container {
+    width: 70vw;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide-steam {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide-steam > img {
+    width: 70vw;
+}
+
+.carousel-slide-weather {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide-weather > img {
+    width: 70vw;
+}
+
+.prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    z-index: 10;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    z-index: 10;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
 .project {
     text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.even {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.odd {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, .90);
 }
 
 .project-name {
@@ -86,12 +153,23 @@ nav {
     margin: 25px 20vw;
 }
 
-.button {
+.button-odd {
     display: inline-block;
     text-decoration: none;
     padding: 4px;
-    border: 3px solid rgba(255, 255, 255, .80);
-    color: rgba(255, 255, 255, .80);
+    border: 3px solid rgba(0, 0, 0, .80);
+    color: rgba(0, 0, 0, .80);
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.button-even {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+    border: 3px solid rgba(255, 255, 255, 0.95);;
+    color: rgba(255, 255, 255, 0.95);;
     border-radius: 3px;
     font-weight: bolder;
     font-size: 25px;
@@ -100,6 +178,8 @@ nav {
 .contact-info {
     font-size: 25px;
     text-align: center;
+    margin: 0;
+    padding-bottom: 5vh;
 }
 
 .link:hover {
@@ -114,15 +194,16 @@ nav {
 }
 
 .about {
-    margin-top: 15vh;
+    padding-top: 10vh;
+    height: 50vh;
 }
 
 .proj {
-    margin-top: 30vh;
+    padding-top: 10vh;
 }
 
 .contact {
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
 
 /* Animations */
@@ -150,13 +231,19 @@ body {
 }
 
 @keyframes blinkingCursor {
-    from{border-right-color: rgba(255, 255, 255, .80);}
+    from{border-right-color: rgba(0, 0, 0, .80);}
     to{border-right-color: transparent;}
 }
 
 @keyframes slideTitle {
-    from{height: 90vh;}
-    to{height: 10vh;}
+    from{
+        background-image: whitesmoke;
+        color: rgba(0, 0, 0, 0.80);
+    }
+    to{
+        background-image: url('./img/ezgif.com-optimize.gif');
+        color: rgba(255, 255, 255, .9);
+    }
 }
 
 @keyframes revealContent {

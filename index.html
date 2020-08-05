@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam MacGregor</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css">
+
 </head>
 <body>
     <header class="hide">
@@ -18,76 +20,93 @@
     <div class="anim">
         <h1 class="name">Adam MacGregor</h1>
     </div>
-    <div class="hide">
-        <section class="about">
-            <h1 class="title" id="about">About</h1>
-            <p class="bio">
-                Hello, world! I recently graduated from the University of Houston in December 2019. I have a B/S in Computer Science with a minor in Mathematics. I am seeking
-                a full time web developer position. I currently know HTML5, CSS3, JavaScript(ES6), React, Node.js, Express, SQL, C++, and Swift. 
+    <section class="about even" id="about">
+        <h1 class="title">About</h1>
+        <p class="bio">
+            Hello, world! I recently graduated from the University of Houston in December 2019. I have a B/S in Computer Science with a minor in Mathematics. I am seeking
+            a full time web developer position. I currently know HTML5, CSS3, JavaScript(ES6), React, Node.js, Express, SQL, C++, and Swift. 
+        </p>
+        
+    </section>
+
+    <section class="proj odd" id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="project">
+            <h1 class="project-name">Steam Achievement Website</h1>
+            <!-- <div class="carousel-container">
+                <i class="fas fa-arrow-left prevBtn" id="steamPrevBtn"></i>
+                <i class="fas fa-arrow-right nextBtn" id="steamNextBtn"></i>
+                <div class="carousel-slide-steam">
+                    <img id="steamLastClone" src="img/steam3.png" alt="">
+                    <img src="img/steam.png" alt="">
+                    <img src="img/steam2.png" alt="">
+                    <img src="img/steam3.png" alt="">
+                    <img id="steamFirstClone" src="img/steam.png" alt="">
+                </div>
+            </div> -->
+            <img class="project-img" src="./img/steam.png">
+            <p>
+                A React frontend being served up by a Node.js backend. The user enters their profile ID as well as selecting the game from 
+                a list of predefined games. The backend handles the API calls to Steam's servers.
             </p>
-        </section>
+            <p>React, Node.js, Express</p>
+            <a href="http://steamachievements-env.eba-vk3kwmyb.us-east-2.elasticbeanstalk.com/" target="_blank" class="button-odd">Live Demo</a>
+        </div>
 
-        <section class="proj">
-            <h1 class="title" id="projects">Projects</h1>
-
-            <div class="project">
-                <h1 class="project-name">Steam Achievement Website</h1>
-                <img class="project-img" src="./img/steam.png">
-                <p>
-                    A React frontend being served up by a Node.js backend. The user enters their profile ID as well as selecting the game from 
-                    a list of predefined games. The backend handles the API calls to Steam's servers.
-                </p>
-                <a href="http://steamachievements-env.eba-vk3kwmyb.us-east-2.elasticbeanstalk.com/" target="_blank" class="button">Live Demo</a>
-            </div>
-            <hr>
-
-            <div class="project">
-                <h1 class="project-name">Weather app</h1>
-                <img class="project-img" src="./img/weather1.png">
-                  <br>
-                <p>
-                    A weather app made with React, Node, and Express. The user enters a city and gets the current weather as well as an hourly 
-					and weekly forecast. The city is converted to latitude and longitude coordinates through OpenCage's geocoding api
-                    and then sent to the OpenWeatherMap api for weather data.
-                </p>
-                <a href="http://weatherapp-env.eba-3keu3mbq.us-east-2.elasticbeanstalk.com/" target="_blank" class="button">Live Demo</a>
-            </div>
-            <hr>
-
-            <div class="project">
-                <h1 class="project-name">Calculator</h1>
-                <img class="project-img" src="./img/calculator.png">
-                <p>A simple calculator made using JavaScript. I used this as a simple project when learning the basics of HTML, CSS, and JavaScript.</p>
-                <a href="https://adam-macgregor.github.io/js-calculator/" target="_blank" class="button">Live Demo</a>
-            </div>
-            <hr>
-
-            <div class="project">
-                <h1 class="project-name">To-do List</h1>
-                <img class="project-img" src="./img/todo.png">
-                <p>A simple to-do list app. I used this as a simple project while learning the basics of React.</p>
-                <a href="https://adam-macgregor.github.io/react-todolist/" target="_blank" class="button">Live Demo</a>
-            </div>
-            <hr>
-
-        </section>
-
-        <section class="contact">
-            <h1 class="title" id="contact">Contact</h1>
-            <p class="contact-info">
-                (832)421-3307<br/><br/>
-                adam.c.macgregor@gmail.com<br/><br/>
-                <a class="link" href="./Adam MacGregor resume.pdf" target="_blank">Resume</a><br/><br/>
-                <a class="link" target="_blank" href="https://github.com/adam-macgregor"><img class="link-img" src="img/github.png" alt="Github"></a>
-                <a class="link" target="_blank" href="https://www.linkedin.com/in/adam-macgregor-b77a35155/"><img class="link-img" src="img/linkedin.png" alt="LinkedIn"></a>
-                
+        <div class="project even">
+            <h1 class="project-name">Weather app</h1>
+            <!-- <div class="carousel-container">
+                <i class="fas fa-arrow-left prevBtn" id="weatherPrevBtn"></i>
+                <i class="fas fa-arrow-right nextBtn" id="weatherNextBtn"></i>
+                <div class="carousel-slide-weather">
+                    <img id="weatherLastClone" src="img/weather2.png" alt="">
+                    <img src="img/weather1.png" alt="">
+                    <img src="img/weather2.png" alt="">
+                    <img id="weatherFirstClone" src="img/weather1.png" alt="">
+                </div>
+            </div> -->
+            <img class="project-img" src="./img/weather1.png">
+            <p>
+                A weather app made with React front end and Node.js backend. The user enters a city and gets the current weather as well as an hourly 
+                and weekly forecast. The city is converted to latitude and longitude coordinates through OpenCage's geocoding api
+                and then sent to the OpenWeatherMap api for weather data.
             </p>
-        </section>
-    </div>
+            <p>React, Node.js, Express</p>
+            <a href="http://weatherapp-env.eba-3keu3mbq.us-east-2.elasticbeanstalk.com/" target="_blank" class="button-even">Live Demo</a>
+        </div>
+
+        <div class="project odd">
+            <h1 class="project-name">Calculator</h1>
+            <img class="project-img" src="./img/calculator.png">
+            <p>A simple calculator made using JavaScript. I used this as a simple project when learning the basics of HTML, CSS, and JavaScript.</p>
+            <a href="https://adam-macgregor.github.io/js-calculator/" target="_blank" class="button-odd">Live Demo</a>
+        </div>
+
+        <div class="project even">
+            <h1 class="project-name">To-do List</h1>
+            <img class="project-img" src="./img/todo.png">
+            <p>A simple to-do list app. I used this as a simple project while learning the basics of React.</p>
+            <a href="https://adam-macgregor.github.io/react-todolist/" target="_blank" class="button-even">Live Demo</a>
+        </div>
+
+    </section>
+
+    <section class="contact odd" id="contact">
+        <h1 class="title">Contact</h1>
+        <p class="contact-info">
+            (832)421-3307<br/><br/>
+            adam.c.macgregor@gmail.com<br/><br/>
+            <a class="link" href="./Adam MacGregor resume.pdf" target="_blank">Resume <i class="fas fa-file"></i></a><br/><br/>
+            <a class="link" target="_blank" href="https://github.com/adam-macgregor"><img class="link-img" src="img/github.png" alt="Github"></a>
+            <a class="link" target="_blank" href="https://www.linkedin.com/in/adam-macgregor-b77a35155/"><img class="link-img" src="img/linkedin.png" alt="LinkedIn"></a>
+            
+        </p>
+    </section>
     <script>
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
